@@ -38,3 +38,7 @@ tasks.test {
 kotlin {
     jvmToolchain(22)
 }
+
+tasks.register("stage") {
+    dependsOn("shadowJar")
+}
